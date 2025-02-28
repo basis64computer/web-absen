@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Absen - SMKN7 Samarinda</title>
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark" id="nav">
+            
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                
+            </div>
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid px-4" id="siswaDashboard">
+                        <h1 class="mt-4">Absensi</h1>
+                        <div class="card bg-light mb-4">
+                            <div class="card-body">
+                                <div class="d-flex flex-column gap-2">
+    <!--div class="input-group">
+        <span class="input-group-text"><i class="bi bi-search"></i></span>
+        <input type="text" class="form-control" placeholder="Cari nama atau kelas">
+    </div>
+
+    <div class="input-group">
+        <span class="input-group-text"><i class="bi bi-funnel"></i></span>
+        <select class="form-control">
+            <option value="" selected>Filter kelas</option>
+            <option value="xtjkt1">X TJKT 1</option>
+            <option value="xtjkt2">X TJKT 2</option>
+            <option value="xtjkt3">X TJKT 3</option>
+            <option value="xpplg1">X PPLG 1</option>
+            <option value="xpplg2">X PPLG 2</option>
+            <option value="xdkv1">X DKV 1</option>
+            <option value="xdkv2">X DKV 2</option>
+            <option value="xanimasi">X ANIMASI</option>
+            <option value="xitjkt1">XI TJKT 1</option>
+            <option value="xitjkt2">XI TJKT 2</option>
+            <option value="xitjkt3">XI TJKT 3</option>
+            <option value="xipplg1">XI PPLG 1</option>
+            <option value="xipplg2">XI PPLG 2</option>
+            <option value="xidkv1">XI DKV 1</option>
+            <option value="xidkv2">XI DKV 2</option>
+            <option value="xianimasi">XI ANIMASI</option>
+            <option value="xiitjkt1">XII TJKT 1</option>
+            <option value="xiitjkt2">XII TJKT 2</option>
+            <option value="xiitjkt3">XII TJKT 3</option>
+            <option value="xiipplg1">XII PPLG 1</option>
+            <option value="xiipplg2">XII PPLG 2</option>
+            <option value="xiidkv1">XII DKV 1</option>
+            <option value="xiidkv2">XII DKV 2</option>
+            <option value="xiianimasi">XII ANIMASI</option>
+        </select>
+    </div-->
+
+    <div class="input-group">
+        <span class="input-group-text"><i class="bi bi-calendar-date"></i></span>
+        <input type="text" class="form-control" placeholder="Pilih Tanggal">
+    </div>
+</div>
+
+                            </div>
+                        </div>
+                        <div class="card mb-4" id="history">
+                            <div class="card-header"><i class="bi bi-people-fill"></i> Daftar Siswa</div>
+                            <div class="card-body">
+                                <table id="datatablesSimple">
+                                    <thead>
+                                        <tr>
+                                            <th>No</th>
+                                            <th>Nama</th>
+                                            <th>Kelas</th>
+                                            <th>Status Pagi</th>
+                                            <th>Status Siang</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tableBody">
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid px-4" id="guruDashboard" hidden>
+                        <div class="py-3">
+                            <div class="container my-2">
+                                <div class="card mb-4">
+                                    <div class="card-header d-flex justify-content-between align-items-center">
+                                        <div class="d-flex flex-row">
+                                            <i class="bi bi-list-ol"></i>
+                                            &nbsp;Cetak List Poin Siswa
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-lg-flex">
+                                            <div class="d-inline">
+                                                <div class="input-group mx-lg-2 mb-2">
+                                                    <select class="form-select" id="inputKelas1" onselect="" title="assets" onchange="">
+                                                        <option value="" selected>kelas</option>
+                                                        <option value="1" selected>X TJKT 1</option>
+                                                        <option value="2" selected>X TJKT 2</option>
+                                                        <option value="3" selected>X TJKT 3</option>
+                                                        <option value="4" selected>X PPLG 1</option>
+                                                        <option value="5" selected>X PPLG 2</option>
+                                                        <option value="6" selected>X DKV 1</option>
+                                                        <option value="7" selected>X DKV 2</option>
+                                                        <option value="8" selected>X ANIMASI</option>
+                                                        <option value="9" selected>XI TJKT 1</option>
+                                                        <option value="10" selected>XI TJKT 2</option>
+                                                        <option value="11" selected>XI TJKT 3</option>
+                                                        <option value="12" selected>XI PPLG 1</option>
+                                                        <option value="13" selected>XI PPLG 2</option>
+                                                        <option value="14" selected>XI DKV 1</option>
+                                                        <option value="15" selected>XI DKV 2</option>
+                                                        <option value="16" selected>XI ANIMASI</option>
+                                                        <option value="17" selected>XII TJKT 1</option>
+                                                        <option value="18" selected>XII TJKT 2</option>
+                                                        <option value="19" selected>XII TJKT 3</option>
+                                                        <option value="20" selected>XII PPLG 1</option>
+                                                        <option value="21" selected>XII PPLG 2</option>
+                                                        <option value="22" selected>XII DKV 1</option>
+                                                        <option value="23" selected>XII DKV 2</option>
+                                                        <option value="24" selected>XII ANIMASI</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="d-inline">
+                                                <div class="mx-lg-4">
+                                                    <button class="btn btn-success" onclick="printListSiswa();"><i class="bi bi-printer"></i> Cetak</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-4">
+                                    <div class="card-header d-flex justify-content-between align-items-center">
+                                        <div class="d-flex flex-row">
+                                            <i class="bi bi-bar-chart"></i>
+                                            &nbsp;Cetak Laporan Pelanggaran Siswa
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-lg-flex">
+                                            <div class="d-inline">
+                                                <div class="input-group">
+                                                    <button class="btn btn-outline-dark" onclick="handlePrev();"><i class="bi bi-caret-left-fill"></i></button>
+                                                    <input type="text" class="form-control w-lg-25" id="namaSiswa" placeholder="Nama" readonly>
+                                                    <button class="btn btn-outline-dark" onclick="handleNext();"><i class="bi bi-caret-right-fill"></i></button>
+                                                </div>
+                                                <p class="my-2" id="indexSiswaText"></p>
+                                            </div>
+                                            <div class="d-inline">
+                                                <div class="input-group mx-lg-2 mb-2">
+                                                    <select class="form-select" id="inputKelas2" onselect="" title="assets" onchange="handleKelas(this.value)">
+                                                        <option value="" selected>kelas</option>
+                                                        <option value="1" selected>X TJKT 1</option>
+                                                        <option value="2" selected>X TJKT 2</option>
+                                                        <option value="3" selected>X TJKT 3</option>
+                                                        <option value="4" selected>X PPLG 1</option>
+                                                        <option value="5" selected>X PPLG 2</option>
+                                                        <option value="6" selected>X DKV 1</option>
+                                                        <option value="7" selected>X DKV 2</option>
+                                                        <option value="8" selected>X ANIMASI</option>
+                                                        <option value="9" selected>XI TJKT 1</option>
+                                                        <option value="10" selected>XI TJKT 2</option>
+                                                        <option value="11" selected>XI TJKT 3</option>
+                                                        <option value="12" selected>XI PPLG 1</option>
+                                                        <option value="13" selected>XI PPLG 2</option>
+                                                        <option value="14" selected>XI DKV 1</option>
+                                                        <option value="15" selected>XI DKV 2</option>
+                                                        <option value="16" selected>XI ANIMASI</option>
+                                                        <option value="17" selected>XII TJKT 1</option>
+                                                        <option value="18" selected>XII TJKT 2</option>
+                                                        <option value="19" selected>XII TJKT 3</option>
+                                                        <option value="20" selected>XII PPLG 1</option>
+                                                        <option value="21" selected>XII PPLG 2</option>
+                                                        <option value="22" selected>XII DKV 1</option>
+                                                        <option value="23" selected>XII DKV 2</option>
+                                                        <option value="24" selected>XII ANIMASI</option>
+
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="d-inline">
+                                                <div class="mx-lg-4">
+                                                    <button class="btn btn-success" onclick="printPelanggaranSiswa();"><i class="bi bi-printer"></i> Cetak</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <div class="modal fade" id="telegramModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header bg-light p-4">
+                                <h5 class="modal-title font-alt" id="infoModalLabel">Hubungkan ke Telegram</h5>
+                                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body border-0 p-4">
+                                <p>Hubungkan ke Telegram orang tua agar mendapatkan informasi tentang pemotongan poin dan pemanggilan orang tua secara realtime. </p>
+                                <div id="otpNumber" hidden>
+                                    <p>Klik tautan ini <a href="https://t.me/smkn7tatib_bot" target="_blank">https://t.me/smkn7tatib_bot</a> atau cari smkn7tatib_bot di Telegram, lalu klik start/mulai dan masukkan kode OTP dari halaman ini. Jangan bagikan OTP kepada siapapun.</p>
+                                    <p class="h4" id="OTP"></p>
+                                    <p id="remainingTime"></p>
+                                </div>
+                                <div id="requestButton">
+                                    <button class="btn btn-primary" type="button" id="buttonRequestOTP" onclick="requestOTP();">Klik untuk mendapatkan OTP</button>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button id="btnSave" class="btn btn-outline-dark" data-bs-dismiss="modal">Tutup</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="py-4 bg-light mt-auto" id="footer">
+                    
+                </footer>
+            </div>
+        </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.4/jspdf.plugin.autotable.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/document-generator.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="js/encrypt.js"></script>
+        <script src="js/cookie.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="assets/demo/chart-area-demo.js"></script>
+        <script type="text/javascript">
+            const guruDashboard = document.getElementById('guruDashboard');
+            const siswaDashboard = document.getElementById('siswaDashboard');
+            const datatablesSimple = document.getElementById('datatablesSimple');
+            const indexSiswaText = document.getElementById('indexSiswaText');
+            let inputKelas1 = document.getElementById('inputKelas1');
+            let inputKelas2 = document.getElementById('inputKelas2');
+            let namaSiswa = document.getElementById('namaSiswa');
+            let intervalId;
+            let remainingTime;
+            let listSiswa;
+            let dataSiswa;
+            let siswaIndex;
+
+    if (datatablesSimple) {
+        tableBodyAddData(1, "Rusdi", "xianimasi", "h", "h");
+        new simpleDatatables.DataTable(datatablesSimple);
+    }
+
+    function tableBodyAddData(no, nama, kelas, statusPagi, statusSiang) {
+        const tableBody = document.getElementById('tableBody');
+        tableBody.innerHTML += `
+            <tr>
+                <td>${no}</td>
+                <td>${nama}</td>
+                <td>${classes[kelas]}</td>
+                <td>
+                    <select class="form-select">
+                        <option>🟢 Hadir</option>
+                        <option>🟡 Izin</option>
+                        <option>🔴 Sakit</option>
+                        <option>⚫ Alpha</option>
+                    </select>
+                </td>
+                <td>
+                    <select class="form-select">
+                        <option>🟢 Hadir</option>
+                        <option>🟡 Izin</option>
+                        <option>🔴 Sakit</option>
+                        <option>⚫ Alpha</option>
+                    </select>
+                </td>
+            </tr>
+        `
+    }
+
+            function handleKelas(value) {
+                dataSiswa = sortAndFilter(listSiswa.scoreboard, value);
+                siswaIndex = 0;
+                setSiswa(siswaIndex);
+            }
+            function setSiswa(index) {
+                namaSiswa.value = dataSiswa[index].name;
+                indexSiswaText.innerHTML = (index+1) + " dari " + dataSiswa.length;
+            }
+
+            function handlePrev() {
+                if (siswaIndex > 0) {
+                    siswaIndex--;
+                }
+                setSiswa(siswaIndex);
+            }
+
+            function handleNext() {
+                if (siswaIndex <= dataSiswa.length-2) {
+                    siswaIndex++;
+                }
+                setSiswa(siswaIndex);
+            }
+
+            function printListSiswa() {
+                let value = inputKelas1.value;
+                cetakLaporanKelas(classes[value], sortAndFilter(listSiswa.scoreboard, value));
+            }
+
+            async function printPelanggaranSiswa() {
+                let value = inputKelas2.value;
+                let siswa = dataSiswa[siswaIndex];
+                let siswaData = await getSiswa(siswa.nisn);
+                cetakLaporanSiswa(siswa.name, classes[siswa.kelas], siswa.nisn, siswa.absen.toString(), siswaData.history, "Abd");
+            }
+
+            function sortAndFilter(data, kelas) {
+                const filteredSiswa = data.filter(d => d.kelas == kelas);
+                const sortedSiswa = filteredSiswa.sort((a, b) => a.absen - b.absen);
+                return sortedSiswa;
+            }
+
+            async function requestOTP() {
+                let response = await fetch("https://testing.basis64computer.workers.dev", { 
+                  method: 'POST',
+                  headers: {"type": "OTP"},
+                  body: JSON.stringify({session_id: getCookie("session_id"), ciphertext: await encryptAES(getCookie("key"), JSON.stringify({nisn: nisn.toString()}))})
+                });
+                let json = await response.json();
+                console.log(await decryptAES(getCookie("key"), json.ciphertext));
+                let otp = JSON.parse(await decryptAES(getCookie("key"), json.ciphertext));
+                console.log("otp: " + otp);
+                console.log(json);
+                if (json.ok) {
+                    remainingTime = otp.expired - json.timestamp;
+                    document.getElementById('otpNumber').hidden = false;
+                    document.getElementById('OTP').innerHTML = otp.code;
+                    document.getElementById('remainingTime').innerHTML = "Tunggu " + Math.floor(((otp.expired - json.timestamp) / 60000)) + " menit " + Math.floor(((otp.expired - json.timestamp) / 1000) % 60) + " detik untuk mendapatkan kembali OTP.";
+                    document.getElementById('buttonRequestOTP').disabled = true;
+                    intervalId = window.setInterval(function(){
+                        document.getElementById('remainingTime').innerHTML = "Tunggu " + Math.floor(((remainingTime) / 60000)) + " menit " + Math.floor(((remainingTime) / 1000) % 60) + " detik untuk mendapatkan kembali OTP.";
+                        remainingTime -= 1000;
+                        if (remainingTime <= 0) {
+                            document.getElementById('buttonRequestOTP').disabled = false;
+                            document.getElementById('remainingTime').innerHTML = "";
+                            clearInterval(intervalId);
+                        }
+                    }, 1000);
+                    //info("Berhasil mengirim informasi pemanggilan orang tua.");
+                } else {
+                    //info("Tidak dapat mengirim informasi pemanggilan orang tua.");
+                }
+            }
+
+            function addTable(no, point, description, timestamp) {
+                let tr = document.createElement("tr");
+                let td_no = document.createElement("td");
+                let td_point = document.createElement("td");
+                let td_description = document.createElement("td");
+                let td_date = document.createElement("td");
+
+                td_no.innerHTML = no;
+                td_point.innerHTML = point;
+                td_description.innerHTML = description;
+                td_date.innerHTML = timestamp;
+
+                tr.appendChild(td_no);
+                tr.appendChild(td_point);
+                tr.appendChild(td_description);
+                tr.appendChild(td_date);
+
+                tableBody.appendChild(tr);
+            }
+            async function initialize(data) {
+                indexSiswaText.innerHTML = "";
+                inputKelas1.value = "";
+                inputKelas2.value = "";
+                namaSiswa.value = "";
+                let response = await fetch("https://testing.basis64computer.workers.dev", { 
+                  method: 'POST',
+                  headers: {"type": "SCOREBOARD"},
+                  body: JSON.stringify({session_id: getCookie("session_id")})
+                });
+                let json = await response.json();
+                let scoreboard = JSON.parse(await decryptAES(getCookie("key"), json.ciphertext));
+                listSiswa = scoreboard;
+                const nisn = document.getElementById('nisn');
+                const poin = document.getElementById('poin');
+                const telegramID = document.getElementById('telegramID');
+                if (data) {
+                    nisn.innerHTML = data.nisn;
+                    poin.innerHTML = data.poin;
+                    telegramID.innerHTML = (data.telegram)?"Akun Telegram sudah terhubung.":"Akun Telegram belum terhubung.";
+                    const date = [];
+                    const score = [];
+                    for (var i = 0; i < data.history.length; i++) {
+                        if (data.history[i].kurang) {
+                            addTable(i+1, '<p class="text-danger">-' + data.history[i].kurang + '</p>', data.history[i].description, formatDate(new Date(data.history[i].timestamp), "dd MMMM yyyy"));
+                        } else {
+                            addTable(i+1, '<p class="text-success">+' + data.history[i].tambah + '</p>', data.history[i].description, formatDate(new Date(data.history[i].timestamp), "dd MMMM yyyy"));
+                        }
+                        date.push(formatDate(new Date(data.history[i].timestamp), "dd MMMM yyyy"));
+                        score.push(data.history[i].sisa);
+                    }
+                    initializeData(date, score, data.poin);
+                    if (datatablesSimple) {
+                        new simpleDatatables.DataTable(datatablesSimple);
+                    }
+
+                    if (data.type == "teacher") {
+                        guruDashboard.hidden = false;
+                        siswaDashboard.hidden = true;
+                        console.log(sortAndFilter(scoreboard.scoreboard, 9));
+                    } else {
+                        guruDashboard.hidden = true;
+                        siswaDashboard.hidden = false;
+                    }
+                } else {
+                    window.location.replace("login.html");
+                }
+            }
+        </script>
+    </body>
+</html>
